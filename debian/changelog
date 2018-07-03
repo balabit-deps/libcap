@@ -1,0 +1,5 @@
+libcap (2.25.syslogng60.1) syslogng60; urgency=low
+
+  * Initial tgz2build package.
+
+ -- Laszlo Varady <laszlo.varady@balabit.com>  Tue, 03 Jul 2018 17:56:33 +0200
