@@ -1,0 +1,13 @@
+Source: libcap
+Section: libs
+Priority: optional
+Maintainer: ZorpOS Maintainers <zorpos@balabit.com>
+Standards-Version: 1.12
+
+Package: libcap
+Architecture: any
+Description: libcap dummy package for tgz2builder
+
+Package: libcap-dev
+Architecture: any
+Description: libcap development files dummy package for tgz2builder

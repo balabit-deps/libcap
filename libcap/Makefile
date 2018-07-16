@@ -37,7 +37,10 @@ libcap.pc: libcap.pc.in
 _makenames: _makenames.c cap_names.list.h
 	$(BUILD_CC) $(BUILD_CFLAGS) $< -o $@
 
-cap_names.h: _makenames
+# We hard-code cap_names.h, making it possible to support new capabilities even if libcap is compiled on older builders.
+# The "generate_cap_names_header" target can be used to update this header.
+#cap_names.h: _makenames
+generate_cap_names_header: _makenames
 	./_makenames > cap_names.h
 
 $(GPERF_OUTPUT): cap_names.list.h
