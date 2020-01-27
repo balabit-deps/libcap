@@ -7,4 +7,3 @@ platforms:
   - linux-glibc2.3.6/i386
   - linux-glibc2.11/amd64
   - linux-glibc2.11/i386
-  - ubuntu-bionic/amd64
