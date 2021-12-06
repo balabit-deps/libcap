@@ -1,0 +1,10 @@
+source="libcap"
+version=2.25-pe-1
+
+build() {
+  make prefix="${prefix}" lib=lib DYNAMIC="yes" LDFLAGS="${LDFLAGS}"
+}
+
+install() {
+  make install prefix="${prefix}" lib=lib DESTDIR="${dest_dir}"
+}
